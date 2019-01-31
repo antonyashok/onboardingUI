@@ -1,0 +1,192 @@
+<form [formGroup]="form" (ngSubmit)="f.form.valid && onSubmit()" novalidate #f="ngForm" class="form-group required">
+  <h4 class='error'> {{errorMsg}}</h4>
+  <p-accordion>
+    <p-accordionTab header="Associate Profile" [selected]="true">
+      <div class="ui-g">
+        <div class="ui-g-12">
+        <div class="ui-g-4">
+          <h4 class='control-label'>Associate First Name</h4>
+          <input type="text" pInputText formControlName="associateFirstName">
+          <div *ngIf="f.submitted && form.controls['associateFirstName'].errors?.required"  class="error"> 
+          Associate First Name required.  
+          </div>
+        </div>
+        
+        <div class="ui-g-4">
+          <h4 class='control-label'>Associate Last Name</h4>
+          <input type="text" pInputText formControlName="associateLastName">
+           <div *ngIf="f.submitted && form.controls['associateLastName'].errors?.required"  class="error"> 
+           Associate Last Name required.  
+           </div>
+        </div>
+        <div class="ui-g-4">
+          <h4 class='control-label'>Phone Number</h4>
+          <input type="text" pInputText  myNumberOnly 
+    maxlength="10" formControlName="phoneNumber">
+           <div *ngIf="f.submitted && form.controls['phoneNumber'].errors?.required"  class="error">
+            Phone Number required.  
+           </div>
+        </div>
+        </div>
+        <div class="ui-g-12">
+          <div class="ui-g-4">
+          <div><h4 class='control-label'>Entry Type</h4></div>
+          <div>
+            <p-radioButton name="entryType" value="CDP" [(ngModel)]="selectedValue" label="CDP" formControlName="entryType" inputId="entryTypeCDP" (click)="checkEntryType('CDP')" ></p-radioButton>
+            <p-radioButton name="entryType" value="Lateral" [(ngModel)]="selectedValue" label="Lateral" formControlName="entryType"
+              inputId="entryTypeLateral" (click)="checkEntryType('Lateral')">
+            </p-radioButton>
+           <div *ngIf="f.submitted && form.controls['entryType'].errors?.required"  class="error"> 
+            Choose entry type.  
+           </div>
+          </div>
+        </div>
+        <div class="ui-g-4">
+          <h4 [ngClass]="selectedValue == 'CDP' ? 'control-label' : 'first'">Associate Id</h4>
+          <input type="text" pInputText myNumberOnly formControlName="associateId" [disableControl]="disable" maxlength="6">
+           <div *ngIf="f.submitted && form.controls['entryType'].value == 'CDP' && form.controls['associateId'].value.startsWith('Lateral') && form.controls['associateId'].errors?.required"  class="error">
+            Associate Id required.  
+           </div>
+           <div *ngIf="f.submitted && form.controls['entryType'].value == 'CDP' && form.controls['associateId'].value.startsWith('Lateral')" class="error">
+            Associate Id invalid.  
+           </div>
+           <div *ngIf="f.submitted && form.controls['entryType'].value == 'CDP' && form.controls['associateId'].value.length != 6" class="error">
+            Associate Id invalid.  
+           </div>
+        </div>
+        </div>       
+        <div class="ui-g-12">
+          <p-button label="Clear" (onClick)="clearProfileTab()" styleClass="ui-button-info"></p-button>
+        </div>
+      </div>
+    </p-accordionTab>
+    <p-accordionTab header="Onboarding Details">
+       <div class="ui-g">
+        <div class="ui-g-12">
+          <div class="ui-g-4">
+            <h4 class='control-label'>Interview Date</h4>
+            <p-calendar [(ngModel)]="interviewDate" formControlName="interviewDate" dateformat='dd/MM/YYYY' [showIcon]="true" showButtonBar="true"></p-calendar>
+            <div *ngIf="f.submitted && form.controls['interviewDate'].errors?.required"  class="error">
+            Interview Date required.  
+           </div>
+          </div>
+          
+           <div class="ui-g-4">
+            <h4 class='control-label'>Offer Rolled Out Date</h4>
+            <p-calendar [(ngModel)]="offerRolledDate" formControlName="offerRolledDate" [showIcon]="true" showButtonBar="true"></p-calendar>
+            <div *ngIf="f.submitted && form.controls['offerRolledDate'].errors?.required"  class="error">
+              Offer Rolled Out Date required.  
+            </div>
+          </div>
+          <div class="ui-g-4">
+            <div class=""><h4 class='control-label'>Interviewer Details</h4></div>
+              <input type="text" pInputText formControlName="interviewDetails">
+              <div *ngIf="f.submitted && form.controls['interviewDetails'].errors?.required"  class="error">
+            Interviewer Details required.  
+           </div>
+          </div>
+        </div>
+        <div class="ui-g-12">
+          <div class="ui-g-4">
+            <h4 class='control-label'>Joining Date</h4>
+            <p-calendar [(ngModel)]="joiningDate" formControlName="joiningDate" [showIcon]="true" showButtonBar="true"></p-calendar>
+            <div *ngIf="f.submitted && form.controls['joiningDate'].errors?.required"  class="error">
+              Joining Date required.  
+            </div>
+          </div>
+          <div class="ui-g-4">
+            <h4 class='control-label'>Profile Shared with customer</h4>
+            <div class=""><p-radioButton name="profileSharedCustomer" value="Yes" [(ngModel)]="profileSharedCustomer" label="Yes" inputId="yes" formControlName="profileSharedCustomer"></p-radioButton>
+                <p-radioButton name="profileSharedCustomer" formControlName="profileSharedCustomer" value="No" [(ngModel)]="profileSharedCustomer" label="No"
+                  inputId="no"></p-radioButton>
+                  <div *ngIf="f.submitted && form.controls['profileSharedCustomer'].errors?.required"  class="error">
+              Profile Shared with customer required.  
+            </div>      
+            </div>
+          </div>
+          <div class="ui-g-4">
+            <h4 class='control-label'>Customer Approved</h4>
+            <div class=""><p-radioButton name="customerApproved" value="Yes" [(ngModel)]="customerApproved" label="Yes" inputId="yes" formControlName="customerApproved" (click)="checkCustomerApproved('Yes')"></p-radioButton>
+                <p-radioButton name="customerApproved" formControlName="customerApproved" value="No" [(ngModel)]="customerApproved" label="No"
+                  inputId="no" (click)="checkCustomerApproved('No')" ></p-radioButton>
+                  <div *ngIf="f.submitted && form.controls['customerApproved'].errors?.required"  class="error">
+              Customer Approved required.  
+            </div>   </div>
+          </div>
+        </div>
+        <div class="ui-g-12">
+          <div class="ui-g-4" >
+            <h4 [ngClass]="customerApproved == 'Yes' ? 'control-label' : 'first'">Project Deployed Date</h4>
+            <p-calendar [(ngModel)]="projectDeployedDate" formControlName="projectDeployedDate" [disabled]="form.controls['customerApproved'].value == 'Yes'? false : true " [showIcon]="true" showButtonBar="true"></p-calendar>
+            <div *ngIf="f.submitted && form.controls['customerApproved'].value == 'Yes' && form.controls['projectDeployedDate'].errors?.required" class="error">
+                Project Deployed Date required.               
+            </div>   
+          </div>
+          <div class="ui-g-4">
+            <h4 [ngClass]="customerApproved == 'Yes' ? 'control-label' : 'first'">Project Assigned</h4>
+            <p-dropdown [options]="projects" [(ngModel)]="selectedProject" optionLabel="name" formControlName="projects" [disabled]="form.controls['customerApproved'].value == 'Yes'? false : true "></p-dropdown>
+            <div *ngIf="f.submitted && form.controls['customerApproved'].value == 'Yes' && form.controls['projects'].errors?.required" class="error">               
+                Project required.  
+            </div>  
+          </div>
+        </div>
+        <div class="ui-g-12">
+          <p-button label="Clear" (onClick)="clearOnboardingDetailsTab()"  styleClass="ui-button-info"></p-button>
+        </div>
+      </div>
+    </p-accordionTab>
+    <p-accordionTab header="Interviewer Feedback">
+        <div class="ui-g">
+          <div class="ui-g-12">
+             <div class="ui-g-12">
+                <h4 class='control-label'>Primary Skill</h4>
+                <p-dropdown [options]="skills" [(ngModel)]="selectedSkill" optionLabel="name" [showClear]="true" formControlName="skill"></p-dropdown>
+                <div *ngIf="f.submitted && form.controls['skill'].errors?.required"  class="error">
+                Primary Skill required.  
+                </div>  
+             </div>
+          </div>
+          <div class="ui-g-12">
+            <div class="ui-g-6">
+              <h4 class='control-label'>Communication:</h4>
+              <textarea rows="5" cols="60" pInputTextarea formControlName="communication"></textarea>
+                <div *ngIf="f.submitted && form.controls['communication'].errors?.required"  class="error">
+              Communication required.  
+            </div>  
+            </div>
+            <div class="ui-g-6">
+              <h4 class='control-label'>Technical Experience:</h4>
+              <textarea rows="5" cols="60" pInputTextarea formControlName="technicalExperience"></textarea>
+              <div *ngIf="f.submitted && form.controls['technicalExperience'].errors?.required"  class="error">
+              Technical Experience required.  
+            </div>  
+            </div>
+          </div>
+          <div class="ui-g-12">
+          <div class="ui-g-6">
+            <h4 class='control-label'>Domain Experience:</h4>
+            <textarea rows="5" cols="60" pInputTextarea formControlName="domainExperience"></textarea>
+            <div *ngIf="f.submitted && form.controls['domainExperience'].errors?.required"  class="error">
+            Domain Experience required.  
+           </div> 
+          </div>
+          <div class="ui-g-6">
+            <h4 class='control-label'>Soft Skils/Other Comments:</h4>
+            <textarea rows="5" cols="60" pInputTextarea formControlName="otherComments"></textarea>
+             <div *ngIf="f.submitted && form.controls['otherComments'].errors?.required"  class="error">
+            Soft Skils/Other Comments required.  
+           </div>
+          </div>
+          </div>
+          <div class="ui-g-12">
+            <div class="ui-g-1">
+              <p-button label="Submit" type="submit" styleClass="ui-button-info"></p-button>
+            </div>
+            <div class="ui-g-1">
+              <p-button label="Clear" (onClick)="clearInterviewrFeebackTab()"  styleClass="ui-button-info"></p-button>
+            </div>
+          </div>
+        </div>
+    </p-accordionTab>
+  </p-accordion>
+</form>

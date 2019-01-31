@@ -1,0 +1,11 @@
+<div class="topnav">
+  <div>
+        <a>
+          <img src="assets/cognizant.png" (click)="getActive('home')" routerLink="onboarding/home">
+        </a>
+      </div>
+      <div >
+          <a (click)="getActive('home')" [(ngClass)]="homeSelected" routerLink="onboarding/home">Home</a>
+          <a (click)="getActive('regiester')" [(ngClass)]="regiesterSelected" routerLink="onboarding/register">Register</a>     
+      </div>
+</div>

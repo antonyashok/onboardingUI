@@ -1,0 +1,22 @@
+export interface OnboardingDetails {
+  associateId;
+  associateFirstName;
+  associateLastName;
+  projectId;
+  joiningDate;
+  projectDeployedDate;
+  skillFamily;
+  associatePhoneNumber;
+  entryType;
+  interviewDate;
+  interviewDetails;
+  offerRolledDate;
+  profileSharedCustomer;
+  customerApproved;
+  projects;
+  skill;
+  communication;
+  technicalExperience;
+  domainExperience;
+  otherComments;
+}

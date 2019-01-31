@@ -1,0 +1,77 @@
+<form [formGroup]="gridForm" (ngSubmit)="f.form.valid" novalidate #f="ngForm">
+  <div class="ui-g-12">
+      <div class="ui-g-12">
+          <div class="ui-g-2">           
+            <p-dropdown [options]="fields" [(ngModel)]="searchFieled" optionLabel="name" formControlName="fieldName"></p-dropdown>
+          </div>
+          <div [ngSwitch]="searchFieled?.code">
+              <div *ngSwitchCase="'skill'" class="ui-g-4"> 
+                <p-dropdown [options]="skills" [(ngModel)]="selectedSkill" placeholder="Select a Skil" optionLabel="name" [showClear]="true"  formControlName="skillField"></p-dropdown>
+                <div *ngIf="f.submitted && gridForm.controls['skillField'].errors?.required"  class="error"> 
+                  Skill required.  
+                </div>
+              </div>
+              <div *ngSwitchCase="'name'" class="ui-g-4">
+                <input type="text" pInputText placeholder="Name"  formControlName="associateNameField">
+                <div *ngIf="f.submitted && gridForm.controls['associateNameField'].errors?.required"  class="error"> 
+                  Associate Name required.  
+                </div>
+              </div>
+              <div *ngSwitchCase="'associateId'" class="ui-g-4">
+                <input type="text" pInputText placeholder="Associate Id"  formControlName="associateIdField">
+                <div *ngIf="f.submitted && gridForm.controls['associateIdField'].errors?.required"  class="error"> 
+                  Associate Id required.  
+                </div>
+              </div>
+              <div *ngSwitchCase="'assignedProject'" class="ui-g-4">
+                <p-dropdown [options]="projects" [(ngModel)]="selectedProject" placeholder="Select a Project" optionLabel="name" [showClear]="true"  formControlName="projectField"></p-dropdown>
+                <div *ngIf="f.submitted && gridForm.controls['projectField'].errors?.required"  class="error"> 
+                    Project Name required.  
+                  
+                </div>
+              </div>
+              <div *ngSwitchCase="'interviewDate'" class="ui-g-6">  
+                  <div class="ui-g-5">
+                    <p-calendar [(ngModel)]="interviewBeforeDate" placeholder="Choose before date"  formControlName="interviewStartField" showButtonBar="true" [showIcon]="true"></p-calendar>
+                    <div *ngIf="f.submitted && gridForm.controls['interviewStartField'].errors?.required"  class="error" > 
+                      Interview Start date required.  
+                    </div>
+                  </div>
+                  <div class="ui-g-5">
+                    <p-calendar [(ngModel)]="interviewAfterDate" placeholder="Choose after date"  formControlName="interviewEndField" showButtonBar="true" [showIcon]="true"></p-calendar>
+                    <div *ngIf="f.submitted && gridForm.controls['interviewEndField'].errors?.required"  class="error"> 
+                      Interview End date required.  
+                    </div>
+                  </div>
+                </div>
+          </div>        
+          <div class="ui-g-2">
+            <p-button label="Search" type="submit" styleClass="ui-button-info" (onClick)= onSearch()></p-button>
+          </div>
+      </div>
+      <div class="ui-g-12">
+        <p-table [columns]="cols" [value]="onboardingDetails" selectionMode="single" [(selection)]="selectedDetail" (click)="onRowSelect(event)" [paginator]="true" [rows]="15">
+          <ng-template pTemplate="header" let-columns>
+              <tr>
+                  <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+                      {{col.header}}
+                      <p-sortIcon [field]="col.field"></p-sortIcon>
+                  </th>
+              </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-rowData let-columns="columns">
+              <tr [pSelectableRow]="rowData">
+                  <td *ngFor="let col of columns">
+                      {{rowData[col.field]}}
+                  </td>
+              </tr>
+          </ng-template>   
+          <ng-template pTemplate="emptymessage">
+            <tr>
+               No records found
+            </tr>
+          </ng-template>
+      </p-table>
+      </div>
+  </div>
+</form>

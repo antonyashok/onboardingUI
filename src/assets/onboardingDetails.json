@@ -1,0 +1,402 @@
+[
+  {
+      "associateId":756433,
+      "associateFirstName":"Antony",
+      "associateLastName":"Ashok",
+      "projectId":"HCSC",
+      "joiningDate":"14/Dec/2018",
+      "projectDeployedDate":"14/Dec/2018",
+      "skillFamily":"Java",
+      "associatePhoneNumber": 9894918062
+  },
+  {
+      "associateId":213874,
+      "associateFirstName":"Vinoth",
+      "associateLastName":"Kumar",
+      "projectId":"CTP",
+      "joiningDate":"07/Dec/2018",
+      "projectDeployedDate":"07/Dec/2018",
+      "skillFamily":".Net",
+      "associatePhoneNumber": 9832154162
+  },
+  {
+      "associateId":"Lateral_1",
+      "associateFirstName":"Kanikai",
+      "associateLastName":"Raj",
+      "projectId":"OPUS",
+      "joiningDate":"03/Nov/2018",
+      "projectDeployedDate":"08/Nov/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 9897324633
+  },
+  {
+      "associateId":"Lateral_2",
+      "associateFirstName":"Ruban",
+      "associateLastName":"Kumar",
+      "projectId":"Extranet",
+      "joiningDate":"01/Jan/2018",
+      "projectDeployedDate":"01/Jan/2018",
+      "skillFamily":"Delivered",
+      "associatePhoneNumber": 7895783254
+  },
+  {
+      "associateId":258741,
+      "associateFirstName":"Britto",
+      "associateLastName":"Soloman",
+      "projectId":"HealthCare",
+      "joiningDate":"17/Feb/2018",
+      "projectDeployedDate":"01/Mar/2018",
+      "skillFamily":"BA",
+      "associatePhoneNumber": 7412589637
+  },
+  {
+      "associateId":789632,
+      "associateFirstName":"Soloman",
+      "associateLastName":"Raj",
+      "projectId":"CTP",
+      "joiningDate":"12/Mar/2018",
+      "projectDeployedDate":"14/Mar/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 7412589633
+  },
+  {
+      "associateId":258747,
+      "associateFirstName":"Joshuva",
+      "associateLastName":"Daniel",
+      "projectId":"OPUS",
+      "joiningDate":"25/Apr/2018",
+      "projectDeployedDate":"26/Apr/2018",
+      "skillFamily":"BA",
+      "associatePhoneNumber": 7485963214
+  },
+  {
+      "associateId":456321,
+      "associateFirstName":"Robert",
+      "associateLastName":"Rasal",
+      "projectId":"OPUS",
+      "joiningDate":"01/May/2018",
+      "projectDeployedDate":"01/May/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 6987453211
+  },
+  {
+      "associateId":124785,
+      "associateFirstName":"Killari",
+      "associateLastName":"Rafel",
+      "projectId":"CTP",
+      "joiningDate":"08/May/2018",
+      "projectDeployedDate":"09/May/2018",
+      "skillFamily":"BA",
+      "associatePhoneNumber": 7894752136
+  },
+  {
+      "associateId":654147,
+      "associateFirstName":"John",
+      "associateLastName":"Herick",
+      "projectId":"Extranet",
+      "joiningDate":"25/May/2018",
+      "projectDeployedDate":"25/Jun/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 6547742317
+  },
+  {
+      "associateId":587423,
+      "associateFirstName":"Andrew",
+      "associateLastName":"Nepolean",
+      "projectId":"CTP",
+      "joiningDate":"14/Jun/2018",
+      "projectDeployedDate":"14/Jun/2018",
+      "skillFamily":"BA",
+      "associatePhoneNumber": 7417417417
+  },
+  {
+      "associateId":148567,
+      "associateFirstName":"Raja",
+      "associateLastName":"Prabhu",
+      "projectId":"OPUS",
+      "joiningDate":"24/Jun/2018",
+      "projectDeployedDate":"28/Jun/2018",
+      "skillFamily":"Java",
+      "associatePhoneNumber": 7894561472
+  },
+  {
+      "associateId":546247,
+      "associateFirstName":"Earnest",
+      "associateLastName":"Rahul",
+      "projectId":"CTP",
+      "joiningDate":"28/Jun/2018",
+      "projectDeployedDate":"18/Jul/2018",
+      "skillFamily":"BA",
+      "associatePhoneNumber": 9156745213
+  },
+  {
+      "associateId":145876,
+      "associateFirstName":"Charles",
+      "associateLastName":"raj",
+      "projectId":"OPUS",
+      "joiningDate":"15/Jul/2018",
+      "projectDeployedDate":"19/Jul/2018",
+      "skillFamily":"Delivered",
+      "associatePhoneNumber": 9442232732
+  },
+  {
+      "associateId":654987,
+      "associateFirstName":"Vinoth",
+      "associateLastName":"Kumar",
+      "projectId":"CTP",
+      "joiningDate":"19/Jul/2018",
+      "projectDeployedDate":"22/Jul/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 9463274157
+  },
+  {
+      "associateId":254893,
+      "associateFirstName":"Prasanth",
+      "associateLastName":"Karthick",
+      "projectId":"Extranet",
+      "joiningDate":"22/Jul/2018",
+      "projectDeployedDate":"22/Jul/2018",
+      "skillFamily":"BA",
+      "associatePhoneNumber": 9874150260
+  },
+  {
+      "associateId":159875,
+      "associateFirstName":"Thirunavukarasu",
+      "associateLastName":"Sekar",
+      "projectId":"OPUS",
+      "joiningDate":"25/Aug/2018",
+      "projectDeployedDate":"29/Aug/2018",
+      "skillFamily":"Java",
+      "associatePhoneNumber": 9894918062
+  },
+  {
+      "associateId":357753,
+      "associateFirstName":"Rex",
+      "associateLastName":"Micheal",
+      "projectId":"CTP",
+      "joiningDate":"29/Aug/2018",
+      "projectDeployedDate":"29/Aug/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 9175652510
+  },
+  {
+      "associateId":159951,
+      "associateFirstName":"Andrew",
+      "associateLastName":"William",
+      "projectId":"HCSC",
+      "joiningDate":"30/Aug/2018",
+      "projectDeployedDate":"30/Aug/2018",
+      "skillFamily":".Net",
+      "associatePhoneNumber": 9442232732
+  },
+  {
+      "associateId":753357,
+      "associateFirstName":"Jackson",
+      "associateLastName":"Raj",
+      "projectId":"Extranet",
+      "joiningDate":"30/Aug/2018",
+      "projectDeployedDate":"30/Aug/2018",
+      "skillFamily":"BA",
+      "associatePhoneNumber": 9334567811
+  },
+  {
+      "associateId":742587,
+      "associateFirstName":"Esidar",
+      "associateLastName":"Remo",
+      "projectId":"CTP",
+      "joiningDate":"01/Sep/2018",
+      "projectDeployedDate":"01/Sep/2018",
+      "skillFamily":"Java",
+      "associatePhoneNumber": 9685274103
+  },
+  {
+      "associateId":636355,
+      "associateFirstName":"David",
+      "associateLastName":"Raj",
+      "projectId":"OPUS",
+      "joiningDate":"01/Sep/2018",
+      "projectDeployedDate":"01/Sep/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 9872244551
+  },
+  {
+      "associateId":742814,
+      "associateFirstName":"Periya",
+      "associateLastName":"Samy",
+      "projectId":"CTP",
+      "joiningDate":"09/Sep/2018",
+      "projectDeployedDate":"09/Sep/2018",
+      "skillFamily":".Net",
+      "associatePhoneNumber": 9741526300
+  },
+  {
+      "associateId":527613,
+      "associateFirstName":"Martin",
+      "associateLastName":"Maria",
+      "projectId":"Extranet",
+      "joiningDate":"10/Sep/2018",
+      "projectDeployedDate":"10/Sep/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 9756231041
+  },
+  {
+      "associateId":147563,
+      "associateFirstName":"John",
+      "associateLastName":"Paul Raj",
+      "projectId":"CTP",
+      "joiningDate":"15/Sep/2018",
+      "projectDeployedDate":"15/Sep/2018",
+      "skillFamily":"Java",
+      "associatePhoneNumber": 8574622233
+  },
+  {
+      "associateId":258741,
+      "associateFirstName":"John",
+      "associateLastName":"Noyal",
+      "projectId":"OPUS",
+      "joiningDate":"19/Sep/2018",
+      "projectDeployedDate":"29/Sep/2018",
+      "skillFamily":".Net",
+      "associatePhoneNumber": 8574123697
+  },
+  {
+      "associateId":369875,
+      "associateFirstName":"Thirunavukarrasu",
+      "associateLastName":"Dhanush",
+      "projectId":"CTP",
+      "joiningDate":"29/Sep/2018",
+      "projectDeployedDate":"29/Sep/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 8527419630
+  },
+  {
+      "associateId":154321,
+      "associateFirstName":"Leo",
+      "associateLastName":"Perinba Raja",
+      "projectId":"OPUS",
+      "joiningDate":"30/Sep/2018",
+      "projectDeployedDate":"30/Sep/2018",
+      "skillFamily":"Java",
+      "associatePhoneNumber": 7485271411
+  },
+  {
+      "associateId":154234,
+      "associateFirstName":"Praveen",
+      "associateLastName":"Kumar",
+      "projectId":"CTP",
+      "joiningDate":"01/Oct/2018",
+      "projectDeployedDate":"01/Oct/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 7755662277
+  },
+  {
+      "associateId":145236,
+      "associateFirstName":"Susai",
+      "associateLastName":"Raj",
+      "projectId":"HCSC",
+      "joiningDate":"06/Oct/2018",
+      "projectDeployedDate":"06/Oct/2018",
+      "skillFamily":"Delivered",
+      "associatePhoneNumber": 8798987411
+  },
+  {
+      "associateId":142875,
+      "associateFirstName":"Vignesh",
+      "associateLastName":"Kumar",
+      "projectId":"Extranet",
+      "joiningDate":"08/OCt/2018",
+      "projectDeployedDate":"08/Oct/2018",
+      "skillFamily":".Net",
+      "associatePhoneNumber": 9159008455
+  },
+  {
+      "associateId":254631,
+      "associateFirstName":"Lenin",
+      "associateLastName":"Raj",
+      "projectId":"Extranet",
+      "joiningDate":"09/Oct/2018",
+      "projectDeployedDate":"19/Oct/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 9458764411
+  },
+  {
+      "associateId":148763,
+      "associateFirstName":"Antony",
+      "associateLastName":"Ajith",
+      "projectId":"CTP",
+      "joiningDate":"22/Oct/2018",
+      "projectDeployedDate":"22/Oct/2018",
+      "skillFamily":"Delivered",
+      "associatePhoneNumber": 7744748596
+  },
+  {
+      "associateId":258978,
+      "associateFirstName":"Andrew",
+      "associateLastName":"Kumar",
+      "projectId":"OPUS",
+      "joiningDate":"25/Oct/2018",
+      "projectDeployedDate":"21/Dec/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 9878544221
+  },
+  {
+      "associateId":446792,
+      "associateFirstName":"Manoj",
+      "associateLastName":"Kumar",
+      "projectId":"Extranet",
+      "joiningDate":"02/Nov/2018",
+      "projectDeployedDate":"06/Nov/2018",
+      "skillFamily":".Net",
+      "associatePhoneNumber": 9487532732
+  },
+  {
+      "associateId":258741,
+      "associateFirstName":"Willson",
+      "associateLastName":"Raj",
+      "projectId":"CTP",
+      "joiningDate":"11/Nov/2018",
+      "projectDeployedDate":"14/Nov/2018",
+      "skillFamily":"Delivered",
+      "associatePhoneNumber": 9468075966
+  },
+  {
+      "associateId":117564,
+      "associateFirstName":"Jegan",
+      "associateLastName":"Raj",
+      "projectId":"HCSC",
+      "joiningDate":"19/Nov/2018",
+      "projectDeployedDate":"19/Nov/2018",
+      "skillFamily":"Scrum Master",
+      "associatePhoneNumber": 9447756510
+  },
+  {
+      "associateId":145987,
+      "associateFirstName":"Felix",
+      "associateLastName":"Sekar",
+      "projectId":"HCSC",
+      "joiningDate":"22/Nov/2018",
+      "projectDeployedDate":"29/Nov/2018",
+      "skillFamily":".Net",
+      "associatePhoneNumber": 9922587564
+  },
+  {
+      "associateId":754321,
+      "associateFirstName":"Praveen",
+      "associateLastName":"Kumar",
+      "projectId":"CTP",
+      "joiningDate":"11/Dec/2018",
+      "projectDeployedDate":"24/Dec/2018",
+      "skillFamily":"Delivered",
+      "associatePhoneNumber": 9845612374
+  },
+  {
+      "associateId":457621,
+      "associateFirstName":"John Paul",
+      "associateLastName":"Prassana",
+      "projectId":"CTP",
+      "joiningDate":"22/Dec/2018",
+      "projectDeployedDate":"30/Dec/2018",
+      "skillFamily":".Net",
+      "associatePhoneNumber": 9745612344
+  }
+]
